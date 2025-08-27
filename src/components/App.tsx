@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import UserSearch from "./components/UserSearch";
-import BuildableSets from "./components/BuildableSets";
-import { fetchBuildableSets } from "./api";
+import UserSearch from "./UserSearch.tsx";
+import BuildableSets from "./BuildableSets.tsx";
+import { fetchBuildableSets } from "../apis/builderCatalogueApi.ts";
 
 const App: React.FC = () => {
     const [sets, setSets] = useState<string[]>([]);
